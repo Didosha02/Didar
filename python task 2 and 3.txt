@@ -1,0 +1,86 @@
+#TASK 2-1
+a = int(input('a = '))
+b = int(input('b = '))
+a = a + b
+b = a - b
+a = a - b
+print('a =', a)
+print('b =', b)
+
+
+#TASK 2-2
+def long_burp(count):
+     print(f"Bu" + 'r' * count + 'p')
+
+
+long_burp(6)
+
+
+
+#TASK 2-3
+import re
+def remove_vowels(text):
+    newText = re.sub(r'[AEIOU]', '*', text, flags=re.IGNORECASE)
+    print(newText)
+ 
+     
+remove_vowels("Celebration")
+
+
+
+
+
+
+#TASK 3-1
+
+def say_hello_bye(text, number):
+     if number == 1:
+         print(f'Hello {text}')
+     elif number == 0:
+         print(f'Bye {text}')
+
+
+say_hello_bye('Didar', 1)
+say_hello_bye('Didar', 0)
+
+
+#TASK  3-2
+def coded_string(text):
+     for x in range(0, len(text)):
+         if(text[x] == 'a'):
+             text[x].replace('o', '0')
+         elif(text[x] == 'a'):
+             text[x].replace('u', '1')
+         elif(text[x] == 'a'):
+             text[x].replace('e', '3')
+         elif(text[x] == 'a'):
+             text[x].replace('a', '4')
+         elif(text[x] == 'a'):
+             text[x].replace('s', '5')
+
+     print(text)
+
+
+coded_string('Didar')
+
+
+
+#TASK 3-3
+def equal(a,b,c):
+     if a==b and a==c and b==c:
+         print(a+b+c)
+     elif a==b and a!=c and b!=c:
+         print(a+b)
+     elif a==c and a!=b and b!=c:
+         print(a+c)
+     elif b==c and b!=a and c!=a:
+         print(c+b)
+     else:
+         print(0)
+ 
+equal(1,1,1)
+
+
+
+
+https://www.online-python.com/
